@@ -40,10 +40,13 @@ img {
     text-indent: 10px;
     font-size: .9em;
     font-style: italic;
+
 }
 .project img {
     width:100%;
+    text-align: start;
     height: 200px;
+    object-fit: cover;
     background-color: #CAEFE5;
     border-radius: 8px;
     margin: 0 0 .5em 0;
@@ -84,6 +87,18 @@ meter {
     display: block;
 }
 
+a:link, a:visited {
+  color: #3d9980;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #7ec5b1;
+}
+
+a:active {
+  color: #2f7562;
+}
 
 @media screen and (max-width: 800px) {
 .projects-container {
