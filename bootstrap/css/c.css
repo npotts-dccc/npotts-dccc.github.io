@@ -1,0 +1,63 @@
+html, * {
+    flex-shrink: 0
+}
+
+#home, #about, #info, #contact, .clear { min-height: 100vh;}
+/*nav {position: -webkit-sticky;
+    position: -moz-sticky;
+    position: -ms-sticky;
+    position: -o-sticky;
+    position: sticky;
+    top:0;}*/
+
+section { 
+    padding-top: 65px; 
+}
+
+#home {
+    background-image: url("../i/peter-lewicki-8FsHLbLdUO4-unsplash.jpg");
+    background-size: cover;
+    background-position: left;
+    background-color: aqua;
+    width: 100%;
+    position:absolute;
+    left:0;
+    text-align: center;
+    clear: both;
+    margin-bottom: .1em;
+}
+
+#home h1 {
+    text-align: center;
+    width: content;
+    display:inline-block;
+    padding: .25em .5em .4em;
+    margin: 0 auto;
+    background-color: black;
+    color: #fff;
+}
+
+#home h2 {
+    text-align: center;
+    width: content;
+    display:inline-block;
+    padding: .25em .5em .4em;
+    margin: 0 auto;
+    background-color: #fff;
+    color: #000;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+    clear: both;
+}
+
+#home .jumbotron {
+        align-items: center;
+    justify-content: center;
+}

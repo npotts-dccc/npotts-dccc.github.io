@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+    <!--custom-->
+    <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/c.css">
+    <link rel="icon" type="image/png" href="../i/favicon.png">
+    <link href="css/lightbox.css" rel="stylesheet" />
+    
+    <!--jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    
+    <!--Bootstrap-->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+
+    <script>
+        $(function() {
+          $('a[href*="#"]:not([href="#"])').click(function() {
+            var target = $(this.hash);
+            if (target.length) {
+              $("html, body").animate(
+                {
+                  scrollTop: target.offset().top
+                },
+                1000
+              );
+            }
+          });
+        });
+    </script>
+    
+     
+    <title>Bootstrap Site</title>
+</head>
+
+<body >
+    <div id="content" class="container">
+    <header>
+        <!--<nav class="">
+        <ul class="sticky-top navbar navbar-dark bg-primary nav">
+              
+                <a class="nav-item nav-link active nav-item scroll-link" href="#home">Home</a>
+              
+                <a class="nav-item nav-link nav-item scroll-link" href="#about">About</a>
+              
+                <a class="nav-item nav-link nav-item scroll-link" href="#info">Info</a>
+           
+                <a class="nav-item nav-link disabled scroll-link" href="#contact">Contact</a>
+           
+        </ul>
+        </nav>-->
+        
+        <nav class="navbar topnav container fixed-top navbar-expand-lg navbar-dark bg-dark">
+          <div class="expand navbar-expand" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link scroll-link" href="#home">Home <span class="sr-only">wow</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-link" href="#others">Other Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </nav>
+    </header>
+    <main>
+        <section id="home" class="section-bg">
+            <div class="container">
+                <div id="title">
+                    <div class="center">
+                        <h1 class="mb-2">Lorem Ipsum</h1>
+                            <h2>Placeholder text for every purpose.</h2>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="clear"></div>
+        <section id="about">
+            <div class="row">
+                <div class="col">
+                    <img src="i/cicero.png" class="img-fluid" alt="Bust of Cicero">
+                </div>
+            <div class="col-9">
+                <h1>What is Lorem Ipsum?</h1>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+
+                <h1>Why do we use it?</h1>
+                <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).</p>
+                </div>
+            </div>
+        </section>
+        <section id="others">
+            <div>
+            <h1>Others Like Ipsum</h1>
+            <p>Lorem ipsum isn't the only placeholder out there. Here are a list of other fillers used in type and other fields. </p>
+                
+                <table class="table table-dark table-striped table-hover">
+                <thead>
+                    <th scope="col" class="w-20">Name</th>
+                    <th scope="col">Type</th>
+                    <th scope="col">Purpose</th></thead>
+                    <tr>
+                        <th scope="row">"The quick brown fox jumps over the lazy dog"</th>
+                        <td>Text/English</td>
+                        <td>An English-language pangram—a sentence that contains all of the letters of the alphabet. It is commonly used for touch-typing practice, testing typewriters and computer keyboards, displaying examples of fonts, and other applications involving text where the use of all letters in the alphabet is desired. Owing to its brevity and coherence, it has become widely known.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Lenna</th>
+                        <td>Image</td>
+                        <td>A standard test image widely used in the field of image processing since 1973. It is a picture of the Swedish model Lena Forsén, shot by photographer Dwight Hooker</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Riker Ipsum</th>
+                        <td>Text</td>
+                        <td>Text using lines of dialogue spoken by Commander William T. Riker in the TV series Star Trek: The Next Generation. </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Fillerama</th>
+                        <td>Text/English</td>
+                        <td>Text from popular television shows.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Stanford Bunny</th>
+                        <td>3D Model</td>
+                        <td>A computer graphics 3D test model developed by Greg Turk and Marc Levoy in 1994 at Stanford University. The model consists of data describing 69,451 triangles determined by 3D scanning a ceramic figurine of a rabbit.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Suzanne</th>
+                        <td>3D Model</td>
+                        <td>Suzanne is Blender's alternative to more common test models such as the Utah Teapot and the Stanford Bunny. A low-polygon model with only 500 faces, Suzanne is included in Blender and often used as a quick and easy way to test materials, animations, rigs, textures, and lighting setups. It is also frequently used in joke images.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Utah Teapot</th>
+                        <td>3D Model</td>
+                        <td>It is a mathematical model of an ordinary teapot that appears solid, cylindrical, and partially convex. A teapot primitive is considered the equivalent of a "Hello, World!" program, as a way to create an easy 3D scene with a somewhat complex model acting as a basic geometry reference for scene and light setup.</td>
+                    </tr>
+                    <tr>
+                        <th scope="row">Fillerama</th>
+                        <td>Text</td>
+                        <td>"Etaoin shrdlu" is the approximate order of frequency of the twelve most commonly used letters in the English language, best known as a nonsense phrase that sometimes appeared in print in the days of "hot type" publishing due to a custom of Linotype machine operators.</td>
+                    </tr>
+                    
+                    <tr>
+                        <th scope="row">Fillerama</th>
+                        <td>Computer Program</td>
+                        <td>Generally, a computer program that outputs or displays the message "Hello, World!". Such a program is very simple in most programming languages, and is often used to illustrate the basic syntax of a programming language. It is often the first program written by people learning to code. It can also be used as a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        <section id="contact">
+            <div>
+             <h1>Contact</h1> 
+                <p>Feel free to reach out to us for any Lorem Ipsum related questions.</p> 
+            <form>
+                <div class="row mb-2">
+                    <div class="col">
+                        <label for="firstname">First Name</label>
+                        <input type="text" name="firstname" id="firstname" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="col">
+                      <label for="lastname">Last Name</label>
+                        <input type="text" name="lastname" id="lastname" class="form-control" placeholder="Last name">
+                    </div>
+                </div>
+                <div class="row mb-2">
+                    <div class="col">
+                    <label for="email">Email</label>
+                        <input type="email" name="email" id="email" class="form-control" placeholder="email@address.com">
+                    </div>
+                </div>
+                <div class="row mb-4">
+                    <div class="col">
+                    <label for="message">Message</label>
+                        <textarea name="message" id="message" class="form-control" rows="5">Your message goes here.</textarea>
+                    </div>
+                </div>
+                
+                
+                
+                
+                <div class="row">
+                    <div class="col">
+                        <input type="submit"class="btn btn-warning" label="Submit">
+                    </div>
+                </div>
+                
+                </form>
+            </div>
+        </section>
+        
+    </main>
+    </div>
+</body>
+</html>
