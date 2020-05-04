@@ -17,6 +17,7 @@ section {
 #home {
     background-image: url("../i/peter-lewicki-8FsHLbLdUO4-unsplash.jpg");
     background-size: cover;
+    background-color: #000;
     background-position: left;
     width: 100%;
     position:absolute;
@@ -60,5 +61,44 @@ section {
         align-items: center;
     justify-content: center;
 }
+.hidenav {display: none;}
+.hamburger {visibility:hidden;
+height: 0;}
+.bg-dark {
+    background-color: #000 !important;
+}
 
+    header {width: 100%;
+    background-color: #000;}
+
+@media screen and (max-width: 500px) {
+    .table-responsive {
+        max-width: 400px;
+        overflow-x: scroll;
+    }
+    .hamburger {
+        visibility: visible;
+        height: auto;
+        position: fixed;
+        width: 100%;
+        left:0;
+        z-index: 2;
+        /*
+        position:absolute;
+        width: 100%;
+        
+        left:0;
+        
+        width:100%;
+        position:absolute;
+        width: 100%;
+        left:0;*/
+        }
+    .hamburger div {
+        z-index: 2;
+    }
+    #mainnav {
+        display: none;
+    }
+}
 #home, #about, #info, #contact, .clear { min-height: 100vh;}

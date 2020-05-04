@@ -9,7 +9,7 @@
     
     <!--custom-->
     <link href="https://fonts.googleapis.com/css?family=Caladea&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="css/c.css">
+    
     <link rel="icon" type="image/png" href="../i/favicon.png">
     
     <!--jquery-->
@@ -18,6 +18,8 @@
     <!--Bootstrap-->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js" integrity="sha384-6khuMg9gaYr5AxOqhkVIODVIvm9ynTT5J4V1cfthmT+emCG6yVmEZsRHdxlotUnm" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" type="text/css" href="css/c.css">
 
     <script>
         $(function() {
@@ -33,6 +35,16 @@
             }
           });
         });
+        
+        $( document ).ready(function() {
+            $(".hidebtn").click( function() {
+             $("#navbarToggleExternalContent").collapse('hide');
+    
+                console.log("It works...");
+            });
+            
+        });
+        
     </script>
     
      
@@ -42,6 +54,8 @@
 <body >
     <div id="content" class="container">
     <header>
+        
+        
         <!--<nav class="">
         <ul class="sticky-top navbar navbar-dark bg-primary nav">
               
@@ -55,8 +69,35 @@
            
         </ul>
         </nav>-->
+        <div class="hamburger">
+        <div class="pos-f-t" >
+          <div class="collapse fixed-top" id="navbarToggleExternalContent">
+            <div class="bg-dark p-4">
+              <h4 class="text-white">Navigation</h4>
+                <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link scroll-link hidebtn" href="#home">Home <span class="sr-only">wow</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-link hidebtn" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-link hidebtn" href="#others">Other Examples</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link scroll-link hidebtn" href="#contact">Contact</a>
+              </li>
+            </ul>
+            </div>
+          </div>
+          <nav class="navbar navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          </nav>
+        </div></div>
         
-        <nav class="navbar topnav container fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <nav class="navbar topnav container fixed-top navbar-expand-lg navbar-dark bg-dark" id="mainnav">
           <div class="expand navbar-expand" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
@@ -74,6 +115,7 @@
             </ul>
           </div>
         </nav>
+        
     </header>
     <main>
         <section id="home" class="section-bg">
@@ -105,7 +147,7 @@
             <div>
             <h1>Others Like Ipsum</h1>
             <p>Lorem ipsum isn't the only placeholder out there. Here are a list of other fillers used in type and other fields. </p>
-                
+                <div >
                 <table class="table table-dark table-striped table-hover">
                 <thead>
                     <th scope="col" class="w-20">Name</th>
@@ -158,6 +200,7 @@
                         <td>Generally, a computer program that outputs or displays the message "Hello, World!". Such a program is very simple in most programming languages, and is often used to illustrate the basic syntax of a programming language. It is often the first program written by people learning to code. It can also be used as a sanity test to make sure that a computer language is correctly installed, and that the operator understands how to use it.</td>
                     </tr>
                 </table>
+                </div>
             </div>
         </section>
         <section id="contact">
